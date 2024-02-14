@@ -39,9 +39,11 @@ def impressao_mensagem_fim_de_jogo(resultado_acertou, resultado_enforcou, a_pala
         print(r"       \_______/             ")
         print('')
         print(f'A palavra era {a_palavra_secreta} \n')
+        
 def limpador():
     input('Precione ENTER para continuar...')
     os.system('cls' if os.name == 'nt' else 'clear')
+    
 def mini_limpador():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -73,8 +75,7 @@ if __name__ == '__main__':
     limpador()
 
     # Game logic
-    fim_de_jogo = False
-    while(not fim_de_jogo):
+    while True:
 
         # Strength
         forca = Forca()
@@ -107,12 +108,11 @@ if __name__ == '__main__':
         limpador()
 
         # Checks whether the player who plays again
-        print('Deseja jogar novamente??')
-        jogar_denovo = input('(s/n) \n')
+        jogar_denovo = input('Deseja jogar novamente?? (s/n): \n')
 
         # If not, end the game
-        if jogar_denovo == 'n':
-            fim_de_jogo = jogar_denovo == 'n'
+        if jogar_denovo != 's':
+            break
 
             # Clears previously displayed content
             mini_limpador()
