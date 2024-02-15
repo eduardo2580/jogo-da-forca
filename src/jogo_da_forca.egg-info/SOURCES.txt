@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/forca/definicoes_da_forca.py
+src/sorteio_palavra/definicoes_sorteio_da_palavra.py
+src/forca/__init__.py
+src/forca/definicoes_da_forca.py
+src/jogo_da_forca.egg-info/PKG-INFO
+src/jogo_da_forca.egg-info/SOURCES.txt
+src/jogo_da_forca.egg-info/dependency_links.txt
+src/jogo_da_forca.egg-info/top_level.txt
+src/sorteio_palavra/__init__.py
+src/sorteio_palavra/definicoes_sorteio_da_palavra.py
+test/test_definicoes_da_forca.py
+test/test_definicoes_sorteio_da_palavra.py
