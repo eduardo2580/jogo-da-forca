@@ -1,4 +1,4 @@
-# Um Jogo da Forca 
+# Jogo da Forca 
 
 Este projeto marca minha primeira incursão na linguagem de programação Python. Durante essa jornada, aprendi muito, mesmo sendo meu primeiro de muitos projetos. Adquiri conhecimentos que vão desde a estrutura de pastas até a codificação.
 
