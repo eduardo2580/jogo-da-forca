@@ -1,4 +1,4 @@
-# Um Jogo da Forca 
+# Jogo da Forca 
 
 Este projeto marca minha primeira incursão na linguagem de programação Python. Durante essa jornada, aprendi muito, mesmo sendo meu primeiro de muitos projetos. Adquiri conhecimentos que vão desde a estrutura de pastas até a codificação.
 
@@ -60,7 +60,7 @@ Aqueles interessados em utilizar o projeto, modificá-lo ou contribuir são mais
 
 ## Contribuidor
 
-Desde já gostaria de agradecer ao meu amigo e colegar [@Eduardo2580](https://github.com/Eduardo2580) por disponibilizar seu tempo e conhecimentos para o desenvolvimento desse projeto.
+Desde já gostaria de agradecer ao meu amigo e colega [@Eduardo2580](https://github.com/Eduardo2580) por disponibilizar seu tempo e conhecimentos para o desenvolvimento desse projeto.
 
 ## Licença 
 

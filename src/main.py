@@ -80,9 +80,9 @@ if __name__ == '__main__':
         # Strength
         forca = Forca()
 
-        acertou = False
-        enforcou = False
-
+        # loop validation variables
+        acertou, enforcou = False, False
+        
         while(not acertou and not enforcou):
 
             # Clears previously displayed content
