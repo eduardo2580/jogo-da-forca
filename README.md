@@ -12,7 +12,7 @@ Para começar a desfrutar do Jogo da Forca, siga estas simples etapas de instala
    Execute o seguinte comando para obter os arquivos do projeto em seu ambiente local:
 
 ```
-git clone [https://github.com/ericshantos/jogo-da-forca.git]
+git clone https://github.com/ericshantos/jogo-da-forca.git
 ```
 
 2. **Crie um ambiente virtual:**
