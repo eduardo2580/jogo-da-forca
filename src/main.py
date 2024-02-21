@@ -1,8 +1,17 @@
 from forca.definicoes_da_forca import Forca
 import os
+        
+def limpador(booleano):
+
+    if (booleano):
+        input('Precione ENTER para continuar...')
+        os.system('cls' if os.name == 'nt' else 'clear')
+    else:
+        os.system('cls' if os.name == 'nt' else 'clear')
+
 def impressao_mensagem_fim_de_jogo(resultado_acertou, resultado_enforcou, a_palavra_secreta):
 
-    os.system('cls' if os.name == 'nt' else 'clear')
+    limpador(False)
 
     if (resultado_acertou):
 
@@ -20,7 +29,7 @@ def impressao_mensagem_fim_de_jogo(resultado_acertou, resultado_enforcou, a_pala
 
     elif (resultado_enforcou):
 
-        print('Puxa, você foi enforcado! \n')
+        print('Puxa, você foi enforcado!  \n')
         print(r"    _______________         ")
         print(r"   /               \        ")
         print(r"  /                 \       ")
@@ -39,18 +48,11 @@ def impressao_mensagem_fim_de_jogo(resultado_acertou, resultado_enforcou, a_pala
         print(r"       \_______/             ")
         print('')
         print(f'A palavra era {a_palavra_secreta} \n')
-        
-def limpador():
-    input('Precione ENTER para continuar...')
-    os.system('cls' if os.name == 'nt' else 'clear')
-    
-def mini_limpador():
-    os.system('cls' if os.name == 'nt' else 'clear')
 
-if __name__ == '__main__':
+def main():
 
     # Clear the content given above
-    mini_limpador()
+    limpador(False)
 
     # Hangman game presentation
     print('***************************************************************')
@@ -58,21 +60,22 @@ if __name__ == '__main__':
     print('*************************************************************** \n')
 
     # Updating game stages
-    limpador()
+    limpador(True)
 
     # Presentation of the game rules
     print('*********************** Regras do Jogo ****************************')
 
     # Clarifying the rules of the game, how it will work.
     print('Como funciona?? \n')
-    print('O jogo da forca consiste em adivinha uma palavra sorteada. Você só poderá tentar adivinha por \n tentativas, chutando letras a sua escolha.')
+    print(
+        'O jogo da forca consiste em adivinha uma palavra sorteada. Você só poderá tentar adivinha por \n tentativas, chutando letras a sua escolha.')
     print('As letras acertadas seram integradas á forca, da qual você deve acerta a palavra para ganhar o jogo. \n')
     print('ATENÇÃO!!!!!')
     print('Você perde se errar um total de 7 chutes. \n')
     print('BOM JOGO :) !! \n')
 
     # Updating game stages
-    limpador()
+    limpador(True)
 
     # Game logic
     while True:
@@ -82,11 +85,10 @@ if __name__ == '__main__':
 
         # loop validation variables
         acertou, enforcou = False, False
-        
-        while(not acertou and not enforcou):
 
+        while (not acertou and not enforcou):
             # Clears previously displayed content
-            mini_limpador()
+            limpador(False)
 
             # Gallows display and relevant information
             forca.layout_forca()
@@ -102,10 +104,10 @@ if __name__ == '__main__':
             enforcou = forca.erros == 7
 
         # Printing the end of game message
-        impressao_mensagem_fim_de_jogo(acertou,enforcou, forca.sorteador.palavra_sorteada)
+        impressao_mensagem_fim_de_jogo(acertou, enforcou, forca.sorteador.palavra_sorteada)
 
         # Updating game stages
-        limpador()
+        limpador(True)
 
         # Checks whether the player who plays again
         jogar_denovo = input('Deseja jogar novamente?? (s/n): \n')
@@ -115,5 +117,8 @@ if __name__ == '__main__':
             break
 
             # Clears previously displayed content
-            mini_limpador()
+            limpador(False)
             print('Obrigado por jogar ;)')
+
+if __name__ == '__main__':
+    main()
