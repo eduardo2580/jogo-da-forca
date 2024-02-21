@@ -109,7 +109,7 @@ def main():
             forca.layout_forca()
 
             # Player's guess
-            chute = input('What is your guess?\n')
+            chute = input('Qual é o seu chute?\n')
 
             # Check if the guess corresponds to any letter in the word
             forca.apuracao_da_forca(chute)
