@@ -39,7 +39,7 @@ class Forca:
         print(f'           letras: {self.letras_digitadas} \n')
         print(f'Forca: {self.quant_lacunas} \n')
 
-    def apuracao_da_forca(self, chute):
+    def apuracao_da_forca(self, chute: str):
         """
         Finds out if the guess corresponds to any letter of the secret word,
         and if so, replaces it. Otherwise, increments the error counter.

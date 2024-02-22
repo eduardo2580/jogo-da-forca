@@ -5,7 +5,7 @@ This module implements a simple hangman game and related utility functions.
 from forca.definicoes_da_forca import Forca
 import os
 
-def limpador(booleano):
+def limpador(booleano: bool):
     """
     Clears the console screen based on the operating system.
 
@@ -18,7 +18,7 @@ def limpador(booleano):
     else:
         os.system('cls' if os.name == 'nt' else 'clear')
 
-def impressao_mensagem_fim_de_jogo(resultado_acertou, resultado_enforcou, a_palavra_secreta):
+def impressao_mensagem_fim_de_jogo(resultado_acertou: bool, resultado_enforcou: bool, a_palavra_secreta: str):
     """
     Prints the end-of-game message based on the game result.
 
