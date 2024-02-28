@@ -71,15 +71,15 @@ def main():
     limpador(False)
 
     # Game introduction
-    print('***************************************************************')
-    print('*************** Bem-vindo ao jogo-da-forca ********************')
-    print('***************************************************************\n')
+    print('*'*50)
+    print('*'*20,' Bem-vindo ao jogo-da-forca ','*'*20)
+    print('*'*50,' \n')
 
     # Update game stages
     limpador(True)
 
     # Game rules presentation
-    print('*********************** Regras do jogo ****************************')
+    print('*'*20,' Regras do jogo ','*'*20)
 
     # Clarifying the rules of the game
     print('Como funciona?\n')
