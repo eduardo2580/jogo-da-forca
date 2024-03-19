@@ -71,9 +71,9 @@ def main():
     limpador(False)
 
     # Game introduction
-    print('*'*50)
+    print('*'*70)
     print('*'*20,' Bem-vindo ao jogo-da-forca ','*'*20)
-    print('*'*50,' \n')
+    print('*'*70,' \n')
 
     # Update game stages
     limpador(True)
