@@ -8,7 +8,7 @@ O projeto começou como um pequeno exercício de programação e evoluiu ao adic
 
 
 > [!IMPORTANT]
-> - É necessário versão 3.12 ou superior.
+> - É necessário Python 3.12 ou superior.
 
 
 Para começar a desfrutar do Jogo da Forca, siga estas simples etapas de instalação:
