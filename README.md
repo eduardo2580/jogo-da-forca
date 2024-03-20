@@ -1,7 +1,5 @@
 # Jogo da Forca 
 
-<img href=">https://github.com/ericshantos/jogo-da-forca/edit/main/README.md" >
-
 Este projeto marca minha primeira incursão na linguagem de programação Python. Durante essa jornada, aprendi muito, mesmo sendo meu primeiro de muitos projetos. Adquiri conhecimentos que vão desde a estrutura de pastas até a codificação.
 
 O projeto começou como um pequeno exercício de programação e evoluiu ao adicionar funções, animações e aplicar encapsulamento. Agora, acredito que o projeto tenha se tornado robusto.
