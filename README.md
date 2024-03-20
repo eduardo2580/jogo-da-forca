@@ -6,6 +6,11 @@ O projeto começou como um pequeno exercício de programação e evoluiu ao adic
 
 ## Execultando o projeto
 
+
+> [!IMPORTANT]
+> - É necessário versão 3.12 ou superior.
+
+
 Para começar a desfrutar do Jogo da Forca, siga estas simples etapas de instalação:
 
 1. **Clone o repositório:**
@@ -43,16 +48,13 @@ pip install -r requirements.txt
 
 Estas etapas garantem uma instalação rápida e eficiente do Jogo da Forca. Para mais detalhes, consulte [INSTALAÇÃO](docs/_source/installation.rst).
 
-## Versão Python
-- É necessário versão 3.12 ou superior.
-
 ## Status do projeto
 
 O projeto encontra-se em sua fase final de idealização. Todas as alterações e conhecimentos técnicos considerados necessários foram aplicados.
 
-## Como entrar em contato
+## Licença 
 
-Para entrar em contato, utilize o seguinte endereço de e-mail: ericshantos13@gmail.com.
+Este projeto é distribuído sob a [Licença Creative Commons](https://creativecommons.org/licenses/by/4.0/legalcode). Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
 
 ## Contribuições
 
@@ -62,12 +64,16 @@ Aqueles interessados em utilizar o projeto, modificá-lo ou contribuir são mais
 
 Desde já gostaria de agradecer ao meu amigo e colega [@Eduardo2580](https://github.com/Eduardo2580) por disponibilizar seu tempo e conhecimentos para o desenvolvimento desse projeto.
 
-## Licença 
-
-Este projeto é distribuído sob a [Licença Creative Commons](https://creativecommons.org/licenses/by/4.0/legalcode). Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
-
 ## Guia rápido
 
 Consulte o [guia rápido](docs/_source/quickguide.rst) para aprender mais sobre a dinâmica do jogo.
+
+## Autor 
+
+**Eric dos Santos** 
+
+LinkedIn: [www.linkedin.com/in/eric-sh](www.linkedin.com/in/eric-sh)
+
+E-mail: [ericshantos13@gmail.com](malito:ericshantos13@gmail.com)
 
 
