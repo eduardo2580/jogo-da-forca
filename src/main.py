@@ -5,7 +5,7 @@ This module implements a simple hangman game and related utility functions.
 from forca.definicoes_da_forca import Forca
 import os
 
-def limpador(booleano: bool):
+def limpador(booleano: bool) -> None:
     """
     Clears the console screen based on the operating system.
 
@@ -18,7 +18,7 @@ def limpador(booleano: bool):
     else:
         os.system('cls' if os.name == 'nt' else 'clear')
 
-def impressao_mensagem_fim_de_jogo(resultado_acertou: bool, resultado_enforcou: bool, a_palavra_secreta: str):
+def impressao_mensagem_fim_de_jogo(resultado_acertou: bool, resultado_enforcou: bool, a_palavra_secreta: str) -> None:
     """
     Prints the end-of-game message based on the game result.
 
@@ -63,7 +63,7 @@ def impressao_mensagem_fim_de_jogo(resultado_acertou: bool, resultado_enforcou: 
         print('')
         print(f'A palavra era {a_palavra_secreta} \n')
 
-def main():
+def main() -> None:
     """
     Main function to execute the hangman game.
     """
@@ -79,7 +79,8 @@ def main():
     limpador(True)
 
     # Game rules presentation
-    print('*'*20,' Regras do jogo ','*'*20)
+    print('*'*40,' Regras do jogo ','*'*40)
+    print("")
 
     # Clarifying the rules of the game
     print('Como funciona?\n')
@@ -112,14 +113,14 @@ def main():
             chute = input('Qual é o seu chute?\n')
 
             # Check if the guess corresponds to any letter in the word
-            forca.apuracao_da_forca(chute)
+            forca.apuracao_da_forca(chute.lower())
 
             # Check win or lose conditions
             acertou = '_' not in forca.quant_lacunas
             enforcou = forca.erros == 7
 
         # Print end-of-game message
-        impressao_mensagem_fim_de_jogo(acertou, enforcou, forca.sorteador.palavra_sorteada)
+        impressao_mensagem_fim_de_jogo(acertou, enforcou, forca.palavra_sorteada)
 
         # Update game stages
         limpador(True)
@@ -129,11 +130,13 @@ def main():
 
         # If not, end the game
         if jogar_denovo != 's':
-            break
 
             # Clear the console
             limpador(False)
             print('Obrigado por jogar ;)')
+
+            break
+
 
 if __name__ == '__main__':
     main()

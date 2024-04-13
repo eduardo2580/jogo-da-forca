@@ -1,4 +1,5 @@
-from sorteio_palavra.definicoes_sorteio_da_palavra import Sorteador
+from requisicao_dicionario_aberto.requisicao_dicionario_aberto import requisicao_dicionario_aberto
+
 
 class Forca:
     """
@@ -13,7 +14,7 @@ class Forca:
         initializes the error counter, and keeps track of the letters declared by the player.
         """
 
-        self.sorteador = Sorteador()  # Instance of Sorteador() in Forca()
+        self.palavra_sorteada = requisicao_dicionario_aberto()  # random word
         self.quant_lacunas = self.desenho_forca()  # Appends the return of desenho_forca() to a variable
         self.erros = 0  # Error counter
         self.letras_digitadas = []  # Letters that were declared by the player
@@ -25,8 +26,11 @@ class Forca:
         Returns:
         - quant_lacunas (list): A list representing the gaps in the secret word.
         """
+        if self.palavra_sorteada is None:
+            raise ValueError("A palavra sorteada não foi definida.")
+
         quant_lacunas = []
-        for lacunas in self.sorteador.palavra_sorteada:
+        for lacuna in self.palavra_sorteada:
             quant_lacunas.append('_')
 
         return quant_lacunas
@@ -47,9 +51,9 @@ class Forca:
         Parameters:
         - chute (str): The letter guessed by the player.
         """
-        if chute in self.sorteador.palavra_sorteada:
+        if chute in self.palavra_sorteada:
             posicao = 0
-            for letras in self.sorteador.palavra_sorteada:
+            for letras in self.palavra_sorteada:
                 if letras == chute:
                     self.quant_lacunas[posicao] = letras
                 posicao += 1

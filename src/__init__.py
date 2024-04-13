@@ -5,4 +5,4 @@ Esse é o arquivo execultável principal, responsável por ordenar as todas as f
 
 """
 
-__version__ = '1.0.0'
+__version__ = '1.2.0'
