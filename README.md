@@ -1,4 +1,7 @@
-# Jogo da Forca 
+# Jogo da Forca
+
+[![CC BY 4.0 License](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](LICENSE)
+[![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
 
 Este projeto marca minha primeira incursão na linguagem de programação Python. Durante essa jornada, aprendi muito, mesmo sendo meu primeiro de muitos projetos. Adquiri conhecimentos que vão desde a estrutura de pastas até a codificação.
 
@@ -54,7 +57,7 @@ O projeto encontra-se em sua fase final de idealização. Todas as alterações 
 
 ## Licença 
 
-Este projeto é distribuído sob a [Licença Creative Commons](https://creativecommons.org/licenses/by/4.0/legalcode). Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
+Este projeto é distribuído sob a [Licença Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode). Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
 
 ## Contribuições
 
